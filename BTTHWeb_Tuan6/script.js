@@ -1,6 +1,7 @@
 let btnStart = document.getElementById('start');
 let btnStop = document.getElementById('stop');
 let btnReset = document.getElementById('reset');
+
 let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');

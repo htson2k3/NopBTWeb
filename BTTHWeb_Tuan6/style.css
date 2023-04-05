@@ -15,9 +15,17 @@
 }
 
 h1 {
+    padding: 10px;
+    border: 4px solid red;
     color: rgb(0, 0, 0);
     text-align: center;
     font-style: italic;
+    background-color: rosybrown;
+    border-radius: 10px;
+}
+
+#time {
+    margin-top: 80px;
 }
 
 .digit {
