@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: repeat(4,68px);
 }
+
 input{
     grid-column: span 4;
     height: 70px;
