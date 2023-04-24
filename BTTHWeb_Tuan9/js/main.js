@@ -36,7 +36,16 @@ function kiemtra() {
     if ($("#bacSi").checked) gia += 500000;
     if (ma === "" || matkhau === "" || $("#ngay").value === "") {
         alert("Chưa nhập đủ dữ liệu");
-    } else {
+    } 
+    else if (!ma.match(/^BN-\d{5}$/)) {
+        alert("Mã bệnh nhân không hợp lệ");
+    } else if (matkhau.length < 6) {
+        alert("Mật khẩu phải chứa ít nhất 6 ký tự");
+    } else if (ngay <= new Date()) {
+        alert("Ngày khám phải sau ngày hiện tại");
+    } 
+    
+    else {
         // Tạo bản ghi mới
         var stt = $(".table").rows.length;
         var maBenhNhan = ma;
