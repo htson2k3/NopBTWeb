@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img_container">
+            <img src="Image/Capture.PNG" alt="" class="img">
+            <span class="caption">Tư vấn Online</span>
+        </div>
+        <ul class="header">
+            <li class="header_bar">Trang chủ</li>
+            <li class="header_bar calendar">Đặt lịch</li>
+        </ul>
+        <table class="table" border="1">
+            <tr>
+                <th>STT</th>
+                <th>Mã bệnh nhân</th>
+                <th>Mật khẩu</th>
+                <th>Ngày khám</th>
+                <th>Phụ thu dịch vụ</th>
+                <th>Chuyên khoa</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>BN-012345</th>
+                <th>abcd1</th>
+                <th>12/3/2023</th>
+                <th>1000000</th>
+                <th>Ngoại tổng quát</th>
+            </tr>
+        </table>
+        <h1>21004305- Hoàng Huy Tới</h1>
+    </div>
+    <div class="modal">
+        <div class="table_modal">
+            <h1>Đặt lịch khám bệnh</h1>
+            <form action="">
+                <div class="form_bar">
+                    <label for="">Mã bệnh nhân</label>
+                    <input required type="text" id="ma" class="input" placeholder="Ma benh nhan">
+                    <span>(*)BN-YYYYY</span>
+                </div>
+                <div class="form_bar">
+                    <label for="mk">Mật khẩu</label>
+                    <input type="password" id="mk" class="input" placeholder="Mat khau">
+                    <span>(*)</span>
+                </div>
+                <div class="form_bar">
+                    <label for="ngay">Ngày khám</label>
+                    <input type="date" id="ngay" class="input" placeholder="mm/dd/yyyy">
+                    <span>(*)</span>
+                </div>
+                <div class="form_bar">
+                    <label for="">Loại dịch vụ</label>
+                    <input type="checkbox" id="yeuCau" value="500000">
+                    <label for="yeuCau">Khám bệnh theo yêu cầu</label>
+                    <input type="checkbox" id="dieuTri" value="500000">
+                    <label for="dieuTri">Điều trị ngoại trú</label>
+                    <input type="checkbox" id="bacSi" value="500000">
+                    <label for="bacSi">Bác sĩ theo yêu cầu</label>
+                </div>
+                <div class="form_bar">
+                    <label for="">Chuyên khoa</label>
+                    <select name="" id="select">
+                        <option value="Ngoại tổng quát">Ngoại tổng quát</option>
+                        <option value="Nhi">Nhi</option>
+                        <option value="Nội tổng quát">Nội tổng quát</option>
+                    </select>
+                </div>
+                <span class="datlich">Đặt lịch</span>
+                <span class="close">Close</span>
+                <span class="x close">x</span>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
